@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Pedir cita | Mi Paz Mental</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__logo">
+                <a href="index.html"><img src="img/Logo.png" alt="logo mi paz mental"></a>
+            </div>
+            <div class="nav__menu">
+                <ul>
+                    <li><a class="button button__secundario--invertido" href="error.html">NewEvents</a></li>
+                    <li><a class="button button__secundario--invertido" href="error.html">Acerca De</a></li>
+                    <li><a class="button button__secundario--invertido" href="terapias.html">Terapias</a></li>
+                    <li><a class="button button__secundario--invertido" href="tarifas.html">Tarifas</a></li>
+                    <li><a class="button button__primario" href="cita.html">Pedir CITA</a></li>
+                    <li><a class="button button__action" href="acceder.html">Acceder</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="main__cita">
+        <section>
+            <img src="/img/sesion 1.png" alt="Imagen pedir cita">
+        </section>
+        <section>
+            <form action=# method="POST">
+                <fieldset class="form">
+                    <input class="form__inputs" type="text" name="Nombre" placeholder="Nombre*" required>
+                    <input class="form__inputs" type="tel" name="Apellidos" placeholder="Apellidos*" required>
+                    <input class="form__inputs" type="email" name="Teléfono" placeholder="Teléfono*" required>
+                    <select name="contacto">
+                        <option value="Preferencia de contacto" selected disabled>Preferencia de contacto</option>
+                        <option value="Teléfono">Teléfono</option>
+                        <option value="Mail">Mail</option>
+                        <option value="Videollamada">Videollamada</option>
+                        <option value="Prsencial">Presencial</option>
+                    </select>
+                    <textarea class="form__inputs textarea" name="Observaciones" placeholder="Observaciones" rows="10" cols="10"></textarea>
+                    <div class="form__inputs--check">
+                        <label for=""><input id="conditions" type="checkbox" name="check" required>Acepto las condiciones de la política de privacidad</label>
+                    </div>
+                </fieldset>           
+                <input class="button button__action" type="submit" value="Pedir cita">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer__element">
+                <h3>Información</h3>
+                <p class="footer__element--title">Horarios de consultas:</p>
+                <p class="footer__element--description">24h online y telefónico</p>
+                <p class="footer__element--title">Ubicación:</p>
+                <p class="footer__element--description">C/Marquez, 21 - 1ºE</p>
+                <p class="footer__element--description">28009 Madrid, España</p>                   
+            </div>
+            <div class="footer__element">
+                <h3>Recursos</h3>
+                <p class="footer__element--description"><a href=#>Terapias</a></p>
+                <p class="footer__element--description"><a href=#>Tarifas</a></p>
+                <p class="footer__element--description"><a href=#>Blog</a></p>
+                <p class="footer__element--description"><a href=#>Acerca de</a></p>
+                <p class="footer__element--description">Síguenos:</p>
+                <div class="rrss">
+                    <img src="IMG/facebook.png">
+                    <img src="IMG/twitter.png">
+                    <img src="IMG/instagram.png">
+                    <img src="IMG/pinterest.png">
+                </div>
+            </div>
+            <div class="footer__element">
+                <h3>Contacto</h3>
+                <p class="footer__element--description">Somos una consulta de psicología online donde podrás acceder a un servicio de psicología profesional, de calidad y orientado a resultados.</p>
+                <p class="footer__element--description"><img src="img/email.png" alt="email"> consulta@mipazmental.com</p>
+                <p class="footer__element--description"><img src="img/telf.png" alt="teléfono"> +34 633  48 52 63</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>MiPazMental © 2022 Todos los Derechos Reservados</p>
+        </div>
+    </footer>
+</body>
+</html>
